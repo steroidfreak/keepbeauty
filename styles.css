@@ -10,14 +10,14 @@ body {
 }
 
 .whatsapp-widget a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #25D366;
     color: white;
-    text-align: center;
-    line-height: 60px;
     font-size: 30px;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
     transition: all 0.3s ease;
@@ -52,6 +52,44 @@ body {
 .lang-separator {
     margin: 0 4px;
     color: #6c757d;
+}
+
+/* Accordion styles */
+.accordion {
+    background-color: #f8f9fa;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+.accordion:hover, .accordion.active {
+    background-color: #e9ecef;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Adjust language selector on mobile */
