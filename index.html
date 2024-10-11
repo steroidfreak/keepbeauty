@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Keep Beauty 拨筋按摩</a>
+            <div class="d-flex align-items-center">
+                <div class="language-selector me-2">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-separator">/</span>
+                    <span class="lang-option" data-lang="zh">中文</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content-en">
+        <!-- Hero Section -->
+        <section id="hero" class="py-5 text-center">
+            <div class="container">
+                <h1 class="display-4">BOJIN Massage</h1>
+                <p class="lead">Discover the healing power of our massage services</p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">About Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="bojin.jpg" alt="bojin" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <p>We are dedicated to providing high-quality massage services to help you relax, rejuvenate, and heal. Our experienced therapists use a variety of techniques to address your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Swedish Massage</h5>
+                                <p class="card-text">A gentle, relaxing massage that improves circulation and reduces stress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Deep Tissue Massage</h5>
+                                <p class="card-text">Targets deep layers of muscle to relieve chronic pain and tension.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Stone Massage</h5>
+                                <p class="card-text">Uses heated stones to melt away tension and promote deep relaxation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Watch Our BOJIN video</h2>
+                <!-- <div class="ratio ratio-16x9">
+                    <iframe src="https://youtube.com/shorts/GNVM_bWVjiI?si=JpNSPAGw9Nt94r62" title="Relaxation Video" allowfullscreen></iframe>
+                    
+                </div> -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/GNVM_bWVjiI" title="Relaxation Video" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Chinese Content -->
+    <div id="content-zh" style="display: none;">
+        <!-- Add Chinese content here -->
+        <h1>中文内容将在这里显示</h1>
+        <p>请添加相应的中文内容</p>
+    </div>
+
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/6582000631" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
