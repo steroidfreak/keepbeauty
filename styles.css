@@ -7,6 +7,7 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+    animation: float 3s ease-in-out infinite;
 }
 
 .whatsapp-widget a {
@@ -19,12 +20,25 @@ body {
     background-color: #25D366;
     color: white;
     font-size: 30px;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 }
 
 .whatsapp-widget a:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* Language selector styles */
@@ -104,3 +118,4 @@ body {
         order: 0;
     }
 }
+
